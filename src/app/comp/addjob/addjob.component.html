@@ -1,0 +1,28 @@
+<div *ngIf="pointToShower" class="jobAdderCont">
+<h2>Add a new job:</h2>
+<table>
+    <tr>
+        <td>Job name:</td>
+        <td><input [(ngModel)]="name" type="text" /></td>
+    </tr>
+    <tr>
+        <td>Job location:</td>
+        <td><input [(ngModel)]="location" type="text" /></td>
+    </tr>
+    <tr>
+        <td>Job salary:</td>
+        <td><input [(ngModel)]="pay" type="text" /></td>
+    </tr>
+</table>
+<br/>
+<button (click)="addJob()">Add a new job</button>
+<br/><br/><br/>
+<div class="allJobsCont" *ngFor="let job of allJobs" >
+    <p>Job name: {{job.name}}</p>
+    <p>Job location: {{job.location}}</p>
+    <p>Job pay: {{job.pay}}</p>
+  </div>
+</div>
+
+
+  

@@ -1,0 +1,26 @@
+.navBtn{
+    margin-right:15px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.navBtn:active{
+    background-color: gainsboro;
+}
+
+.joke{
+    margin-top: 25px;
+    color:white;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.date{
+    float: right;
+    color: white;
+    font-size: 30px;
+}
